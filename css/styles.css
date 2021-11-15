@@ -44,7 +44,12 @@ ul {
 }
 
 .section {
+  padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.section-align {
+  padding-top: 0;
 }
 
 img {
@@ -163,13 +168,16 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
 
   background-color: var(--first-background-color);
 }
 
 .main-title {
-  margin: 200px 452px 30px 452px;
+  margin-bottom: 30px;
   text-align: center;
+  width: 696px;
 
   font-weight: 900;
   font-size: 44px;
@@ -180,11 +188,9 @@ header {
 }
 
 .hero-btn {
-  margin-bottom: 200px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  width: 200px;
-  height: 50px;
+  padding: 10px 32px;
 
   font-family: inherit;
   font-style: normal;
@@ -201,10 +207,11 @@ header {
 
 .features-container {
   display: flex;
+  justify-content: space-between;
 }
 
-.item-features:not(:last-child) {
-  margin-right: 30px;
+.item-features {
+  width: 270px;
 }
 
 .title-features {
@@ -239,7 +246,7 @@ Section 3  ==========*/
 .title-section-team {
   text-align: center;
 
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   color: var(--second-title-color);
   font-size: 36px;
@@ -261,11 +268,14 @@ Section 3  ==========*/
   margin-right: 30px;
 }
 
-.title-employee {
-  margin-top: 30px;
-  margin-bottom: 10px;
+.team-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
+}
 
+.title-employee {
+  padding-bottom: 10px;
   color: var(--third-title-color);
   font-weight: 500;
   font-size: 16px;
@@ -274,9 +284,6 @@ Section 3  ==========*/
 }
 
 .text-profession {
-  text-align: center;
-  margin-bottom: 30px;
-
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.19;
@@ -317,8 +324,7 @@ Section 3  ==========*/
 .guide-container {
   justify-content: center;
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .guide-list {
@@ -333,6 +339,10 @@ Section 3  ==========*/
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
+}
+
+.guide-list {
+  padding: 6px 22px;
 }
 
 .item-guide:not(:last-child) {
@@ -358,18 +368,15 @@ Section 3  ==========*/
   margin-bottom: 30px;
 }
 
+.text-projects-container {
+  padding: 20px 0 20px 24px;
+}
+
 .projects-item:nth-child(3n + 0) {
   margin-right: 0;
 }
 
-.projects-item > img {
-  margin-bottom: 20px;
-}
-
 .title-projects {
-  margin-bottom: 4px;
-  margin-left: 24px;
-
   color: var(--second-title-color);
   font-size: 18px;
   line-height: 2;
@@ -377,9 +384,6 @@ Section 3  ==========*/
 }
 
 .text-projects {
-  margin-bottom: 20px;
-  margin-left: 24px;
-
   font-size: 16px;
   line-height: 1.85;
   letter-spacing: 0.03em;
